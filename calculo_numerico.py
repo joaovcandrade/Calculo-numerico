@@ -22,7 +22,7 @@ class Representacao:
         int_part = int(valor) #Parte inteira (antes da virgula)
 
         #Caso a parte inteira não seja [0,...], normalizar  
-        valor_expoente = 0   
+        'valor_expoente = 0   
         if(int_part != 0):
             valor_expoente = len(str(int_part)) #Quantas casas decimais parte inteira
             #Caso o meu expoente atual seja menor que o maior expoente informado, normaliza
