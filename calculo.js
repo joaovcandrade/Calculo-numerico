@@ -209,7 +209,7 @@ function realizar_operacao(operacao, tipo, mantissa){
     }
     
   }
-  return [calculado.split("[").join(" X 10^").split("]").join(""), memoria]
+  return [calculado.split("[").join(" X 10^").split("]").join("") + `${ ((calculado.split('[')[1].split(']')[0] > 5)? ' overflow' : '' )} ${(calculado.split('[')[1].split(']')[0] < -5)? ' underflow' : ''}`, memoria]
 
 }
 
