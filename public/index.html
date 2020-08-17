@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="src/css/bootstrap.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="padding: 50px">
+    <img src="src/img/equation.svg" alt="">
+    <form>
+        <div class="form-group">
+          <label for="n">M</label>
+          <input type="text" class="form-control" id="n">
+        </div>
+        <div class="form-group">
+          <label for="x">X</label>
+          <input type="text" class="form-control" id="x">
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="truncamento" value="arredondamento">
+            <label class="form-check-label" for="truncamento">Truncamento</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" value="arredondamento" id="arredondamento">
+            <label class="form-check-label" for="arredondamento">Arredondamento</label>
+          </div>
+        <button type="submit" class="btn btn-primary" id="aplicar">Aplicar</button>
+      </form>
+      <p>
+        <a class="btn btn-primary" id="botaoResultado" data-toggle="collapse" href="#collapseResolucao" role="button" aria-expanded="false" style="display: none;">
+          Resolução
+        </a>
+      </p>
+      <div class="collapse" id="collapseResolucao">
+        <div class="card card-body" id="resolucao" >
+          Ainda não há resolução
+        </div>
+      </div>
+      <p id="resultado"></p>
+    
+    <script src="calculo.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="src/js/bootstrap.js"></script>
+
+</body>
+</html>
